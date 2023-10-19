@@ -128,6 +128,11 @@ LOGGING = {
         'console': {
             'class': 'logging.StreamHandler',
         },
+        'file': {
+            'level': 'DEBUG',
+            'class': 'logging.FileHandler',
+            'filename': '/app/debug.log',
+        }
     },
     'root': {
         'handlers': ['console'],
