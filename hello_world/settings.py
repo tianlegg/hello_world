@@ -140,14 +140,13 @@ LOGGING = {
             'formatter': 'verbose'
         },
         'file': {
-            'level': 'DEBUG',
             'class': 'logging.FileHandler',
-            'filename': '/app/debug.log',
+            'filename': '/app/django.log',
             'formatter': 'verbose'
         }
     },
     'root': {
         'handlers': ['console','file'],
-        'level': 'DEBUG',
+        'level': 'INFO',
     },
 }
